@@ -1,0 +1,21 @@
+div{
+    
+    background-color: #FAEBD7;
+    max-width: 100%;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    
+    border-radius: 20px;
+}
+
+img{
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 100px;
+}
+
+h1{
+    text-align: center;
+}
