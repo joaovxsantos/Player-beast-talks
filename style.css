@@ -1,15 +1,22 @@
-div{
+body{
     
     background-color: #FAEBD7;
+}
+
+
+.container{
+    
+    
+    
+    background-color: #f7dfc1;
     max-width: 100%;
     width: 500px;
     height: 300px;
     margin: auto;
-    
     border-radius: 20px;
 }
 
-img{
+#img{
     display: block;
     margin: auto;
     padding: 1rem;
@@ -26,4 +33,21 @@ audio{
     
     display: block;
     margin: auto;
+}
+
+p{
+    text-align: center;
+    font-weight: 600;
+}
+
+.content{
+   display: block;
+   text-align: center;
+   padding: 1rem;
+   
+}
+
+
+.imgg{
+    padding: 1rem   ;
 }
