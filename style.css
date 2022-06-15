@@ -43,3 +43,8 @@ p {
 .imgg {
   padding: 1rem;
 }
+
+
+#switch2{
+  display: none;
+}
