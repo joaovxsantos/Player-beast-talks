@@ -1,13 +1,14 @@
-body, html {
+body,
+html {
   background-color: #faebd7;
-  
+  /* max-width: 100%; */
 }
 
 .container {
   background-color: #f7dfc1;
   max-width: 100%;
   width: 500px;
-  height: 320px;
+  height: 350px;
   /* width: 350px;
   height: 350px; */
   margin: auto;
@@ -45,46 +46,41 @@ p {
 
 .imgg {
   padding: 1rem;
+  cursor: pointer;
 }
 
-
-#switch2{
+#switch2 {
   display: none;
 }
 
-
-progress{
-  position: relative;
-  width: 100%;
-  left: 50%;
-  transform: translate(-50%);
+progress {
   height: 6px;
-  bottom: 12px;
-  
-  
+  width: 0%;
+  background-color: #333;
 }
 
-
-.tempo{
-  display: flex;
-  
-}
-
-
-.barra{
+.barra {
   margin: auto;
-  border: solid 1px rgb(54, 54, 54);
-  width: 80%;
-  border-radius: 5px;
+  width: 300px;
   height: 6px;
-  
-  
+  border: 1px solid rgb(58, 56, 56);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.ponto{
+.ponto {
   width: 20px;
   height: 20px;
-  border-color: rgb(233, 3, 3); 
+  border-radius: 50%;
+  background-color: #eee;
+  margin-left: -10px;
 }
 
-
+.tempo {
+  margin: auto;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}

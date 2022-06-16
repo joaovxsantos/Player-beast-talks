@@ -1,13 +1,9 @@
 const audio = document.getElementById("audio")
 const $b = document.querySelector("#switch")
 const $c = document.querySelector("#switch2")
+const barra = document.querySelector("progress")
 
-audio.onloadeddata = function(){
-    let data = new Date(null);
-    data.setSeconds(audio.duration);
-    let duracao = data.toISOString().substr(12, 8);
-    console.log("O som tem duração " + duracao);
-}
+
 
 
 
@@ -23,8 +19,40 @@ $c.addEventListener("click", function(){
 )
 
 
+audio.addEventListener("timeupdate", function(){
+    barra.style.width = Math.floor((audio.currentTime/audio.duration) * 100) + "%"
+    let tempoDecorrido = document.querySelector(".inicio");
+    tempoDecorrido.textContent = segundosParaMinutos(Math.floor(audio.currentTime))
+})
+
+function segundosParaMinutos(segundos){
+    let campoMinutos = Math.floor(segundos / 60)
+    let campoSegundos = segundos % 60
+    let campoHoras = Math.floor(campoMinutos / 60)
+    if(campoSegundos < 10){
+        campoSegundos = "0" + campoSegundos
+    }
+    if(campoMinutos < 10){
+        campoMinutos = "0" + campoMinutos;
+    }
+    if(campoHoras < 10){
+        campoHoras = "0" + campoHoras;
+    }
+
+    if(campoMinutos>=60){
+        
+        campoMinutos = "0" + Math.floor(campoMinutos % 60)
+        
+    }
+
+    return campoHoras + ":" + campoMinutos + ":" + campoSegundos;
+}
+
+
+
+
 function next() {
-    audio.currentTime += 15
+    audio.currentTime += 150
 }
 
 function back() {
