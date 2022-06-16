@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,29 +9,40 @@
     <link rel="stylesheet" href="./style.css">
     <title>BeastTalks</title>
 </head>
+
 <body>
 
     <h1>Talks Beast - O seu podcast sobre tudo!</h1>
-<div class="container">
-   
-    <img id="img" src="./images/talksbeast.jpg" alt="" width="100px">
-    <audio  id="audio" src="./tracks/beast.mp3"></audio>
-    <p>EP - #01 - ESTREIA, DBD, FILMES E MAIS... </p>
-    <div class="content">
-    <img onclick="back()"  class="imgg" src="./images/left.PNG" alt="back" width="40px">
-    <img id="switch" class="imgg" src="./images/play.PNG" width="40px" alt="play">
-    <img src="./images/pause.PNG" class="imgg" id="switch2" width="40px" alt="pause">
-    <img class="imgg" onclick = "next()" src="./images/right.PNG" alt="next" width="40px">
-</div>
-   
-      
+    <div class="container">
+
+        <img id="img" src="./images/talksbeast.jpg" alt="" width="100px">
+        <audio id="audio" src="./tracks/beast.mp3"></audio>
+        <p>EP - #01 - ESTREIA, DBD, FILMES E MAIS... </p>
+        <div class="content">
+            <img onclick="back()" class="imgg" src="./images/left.PNG" alt="back" width="40px">
+            <img id="switch" class="imgg" src="./images/play.PNG" width="40px" alt="play">
+            <img src="./images/pause.PNG" class="imgg" id="switch2" width="40px" alt="pause">
+            <img class="imgg" onclick="next()" src="./images/right.PNG" alt="next" width="40px">
+        </div>
+        <div class="barra">
+        <progress value="0.5" max="1"></progress>
+        <div class="ponto">
+            
+        </div>
+    
+    </div>
+        <div class="tempo">
+            <p class="inicio">0:00</p>
+            <p class="fim">1:02:26</p>
+
+        </div>
+        </div>
+        
 
 
-</div>
 
 
-
-
-<script src="./script.js"></script>  
+    <script src="./script.js"></script>
 </body>
+
 </html>

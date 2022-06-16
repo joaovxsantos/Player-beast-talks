@@ -1,12 +1,15 @@
-body {
+body, html {
   background-color: #faebd7;
+  
 }
 
 .container {
   background-color: #f7dfc1;
   max-width: 100%;
   width: 500px;
-  height: 300px;
+  height: 320px;
+  /* width: 350px;
+  height: 350px; */
   margin: auto;
   border-radius: 20px;
 }
@@ -48,3 +51,40 @@ p {
 #switch2{
   display: none;
 }
+
+
+progress{
+  position: relative;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 6px;
+  bottom: 12px;
+  
+  
+}
+
+
+.tempo{
+  display: flex;
+  
+}
+
+
+.barra{
+  margin: auto;
+  border: solid 1px rgb(54, 54, 54);
+  width: 80%;
+  border-radius: 5px;
+  height: 6px;
+  
+  
+}
+
+.ponto{
+  width: 20px;
+  height: 20px;
+  border-color: rgb(233, 3, 3); 
+}
+
+
