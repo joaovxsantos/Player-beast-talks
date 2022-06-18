@@ -1,3 +1,5 @@
+
+//Pegando os elementos
 const audio = document.getElementById("audio")
 const $b = document.querySelector("#switch")
 const $c = document.querySelector("#switch2")
@@ -6,7 +8,7 @@ const barra = document.querySelector("progress")
 
 
 
-
+//Fazendo os eventos com os elementos
 $b.addEventListener("click", function(){
     $c.style = "display: inline-block"
     $b.style = "display: none"
@@ -24,6 +26,8 @@ audio.addEventListener("timeupdate", function(){
     let tempoDecorrido = document.querySelector(".inicio");
     tempoDecorrido.textContent = segundosParaMinutos(Math.floor(audio.currentTime))
 })
+
+//Funçoes
 
 function segundosParaMinutos(segundos){
     let campoMinutos = Math.floor(segundos / 60)
